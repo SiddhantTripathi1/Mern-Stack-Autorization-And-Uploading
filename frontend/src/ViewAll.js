@@ -4,7 +4,7 @@ import './ViewAll.css';
 
 function ViewAll() {
   const [users, setUsers] = useState([]);
-  const navigate = useNavigate();
+  
 
   useEffect(() => {
     const fetchUsers = async () => {
