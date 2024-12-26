@@ -20,7 +20,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/api/create-account', {
+      const response = await fetch('/api/create-account', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
