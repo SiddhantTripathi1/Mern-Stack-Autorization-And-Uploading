@@ -1,0 +1,271 @@
+/* Existing Dashboard Styles */
+.dashboard {
+    padding: 20px;
+    margin-top: 60px; /* Add a margin to create space for the navbar */
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    margin-right: 20px;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .default-avatar {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .user-info {
+    font-size: 18px;
+  }
+  
+  button {
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Bio Textarea */
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Modal Button Styles */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10; /* Ensures the navbar stays on top of other content */
+  }
+  
+  .navbar .navbar-links button {
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .navbar .navbar-links button:hover {
+    background-color: #555;
+  }
+  
+  /* Bio and Video Button Styles */
+  .add-bio-button,
+  .add-video-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .add-bio-button:hover,
+  .add-video-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Modal Popup for Bio and Video Upload */
+  .popup-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+  }
+  
+  .popup-content h3 {
+    margin-top: 0;
+  }
+  
+  /* Input Fields for Video and Bio Modal */
+  .popup-content input[type="text"],
+  .popup-content textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* File Input */
+  .popup-content input[type="file"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Save Button */
+  .save-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .save-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Close Button */
+  .close-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .close-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Video Preview */
+  .video-preview {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  /* Button Disabled State */
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Loader Button State */
+  button[disabled] {
+    cursor: not-allowed;
+  }
+  
+  /* Profile Image Upload Button */
+  input[type="file"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  
+  /* Add Profile Bio Styles */
+  .add-bio-section,
+  .add-video-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .add-bio-section button,
+  .add-video-section button {
+    width: 200px;
+    margin-top: 10px;
+  }
+  .videos-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .video-item {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .video-item img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .video-item h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .video-item p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  
