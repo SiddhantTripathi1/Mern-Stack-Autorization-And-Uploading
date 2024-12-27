@@ -55,7 +55,7 @@ const handleImageUpload = async () => {
     setLoading(true);
   
     try {
-      const response = await fetch('http://localhost:3000/api/upload-image', {
+      const response = await fetch('https://mern-stack-autorization-and-uploading.onrender.comhttps://mern-stack-autorization-and-uploading.onrender.com/api/upload-image', {
         method: 'POST',
         body: formData,
       });
@@ -83,7 +83,7 @@ const handleImageUpload = async () => {
   // Save Bio
   const handleSaveBio = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/update-bio', {
+      const response = await fetch('https://mern-stack-autorization-and-uploading.onrender.com/api/update-bio', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -142,7 +142,7 @@ const handleVideoUpload = async () => {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:3000/api/upload-video', {
+      const response = await fetch('https://mern-stack-autorization-and-uploading.onrender.com/api/upload-video', {
         method: 'POST',
         body: formData,
       });

@@ -20,7 +20,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/create-account', {
+      const response = await fetch('https://mern-stack-autorization-and-uploading.onrender.com/api/create-account', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

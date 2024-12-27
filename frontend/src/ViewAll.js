@@ -9,7 +9,7 @@ function ViewAll() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/view-all');
+        const response = await fetch('https://mern-stack-autorization-and-uploading.onrender.comhttps://mern-stack-autorization-and-uploading.onrender.com/api/view-all');
         const data = await response.json();
         if (response.ok) {
           setUsers(data.users);
@@ -33,7 +33,7 @@ function ViewAll() {
             <div key={index} className="user-card">
               <div className="user-info">
                 <img
-                  src={`http://localhost:3000/${user.profileImage}`}
+                  src={`https://mern-stack-autorization-and-uploading.onrender.com/${user.profileImage}`}
                   alt="Profile"
                   className="user-image"
                 />
@@ -45,7 +45,7 @@ function ViewAll() {
                 {user.videos.slice(0, 5).map((video, idx) => (
                   <div key={idx} className="video-thumbnail">
                     <img
-                      src={`http://localhost:3000/${video.thumbnailPath}`}
+                      src={`https://mern-stack-autorization-and-uploading.onrender.comhttps://mern-stack-autorization-and-uploading.onrender.com/${video.thumbnailPath}`}
                       alt={`Video Thumbnail ${idx + 1}`}
                       className="thumbnail-image"
                     />
