@@ -21,8 +21,6 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Connect to MongoDB
 mongoose.connect("mongodb+srv://siddhantripathi4:ROOT@bigboytoyz.82pv4.mongodb.net/?retryWrites=true&w=majority&appName=BigBoyToyz", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
 }).then(() => console.log("Connected to MongoDB"))
   .catch(err => console.error("Error connecting to MongoDB:", err));
 
